@@ -7,6 +7,8 @@ def main(source="content", dest="dist"):
              "source": source,
              "dest": dest
          }
+         Site(**config).build()
 
-Site(**config).build()
+        
+
 typer.run(main)
